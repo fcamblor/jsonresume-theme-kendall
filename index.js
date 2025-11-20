@@ -285,6 +285,11 @@ function render(resumeObject) {
     if (resumeObject.skills && resumeObject.skills.length) {
         if (resumeObject.skills[0].name) {
             resumeObject.skillsBool = true;
+            _.each(resumeObject.skills, function(s){
+                if (s.level) {
+                    s.levelLower = s.level.toLowerCase();
+                }
+            });
         }
     }
 

@@ -283,7 +283,7 @@
             <div class="skills clearfix">
               <div class="item-skills">
                   {{name}}
-                  {{#level}}<span class="skill-level">{{level}}</span>{{/level}}
+                  {{#level}}<span class="skill-level skill-level-{{levelLower}}">{{level}}</span>{{/level}}
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
                 {{#keywords}}
