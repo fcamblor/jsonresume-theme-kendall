@@ -268,6 +268,30 @@ function render(resumeObject) {
         }
     }
 
+    if (resumeObject.looking_for && resumeObject.looking_for.items && resumeObject.looking_for.items.length) {
+        resumeObject.looking_for.items = _.map(resumeObject.looking_for.items, function(item) {
+            item.text = markdownToHtml(item.text);
+            if (item.subitems && item.subitems.length) {
+                item.subitems = _.map(item.subitems, function(subitem) {
+                    return markdownToHtml(subitem);
+                });
+            }
+            return item;
+        });
+    }
+
+    if (resumeObject.offering && resumeObject.offering.items && resumeObject.offering.items.length) {
+        resumeObject.offering.items = _.map(resumeObject.offering.items, function(item) {
+            item.text = markdownToHtml(item.text);
+            if (item.subitems && item.subitems.length) {
+                item.subitems = _.map(item.subitems, function(subitem) {
+                    return markdownToHtml(subitem);
+                });
+            }
+            return item;
+        });
+    }
+
     if (resumeObject.publications && resumeObject.publications.length) {
         if (resumeObject.publications[0].name) {
             resumeObject.publicationsBool = true;
