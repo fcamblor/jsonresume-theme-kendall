@@ -107,7 +107,6 @@ function render(resumeObject) {
                 p.iconClass = "fas fa-key";
                 break;
             case "bluesky":
-                p.iconClass = "bluesky-icon";
                 p.isBluesky = true;
                 break;
             default:

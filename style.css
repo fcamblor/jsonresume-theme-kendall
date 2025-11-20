@@ -277,13 +277,15 @@ blockquote {
   color: #000;
 }
 
+.bluesky-emoji {
+  font-size: 1.25em;
+  line-height: 1em;
+  vertical-align: text-bottom;
+}
+
 #language-skills .skill{
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 
-.bluesky-emoji {
-  font-size: 1.3em;
-  line-height: 1em;
-}
