@@ -2,9 +2,21 @@ var fs = require('fs');
 var _ = require('lodash');
 var gravatar = require('gravatar');
 var Mustache = require('mustache');
+var { marked } = require('marked');
 
 var d = new Date();
 var curyear = d.getFullYear();
+
+// Configure marked to not use <p> tags for simple text (inline rendering)
+marked.setOptions({
+    breaks: true,
+    gfm: true
+});
+
+function markdownToHtml(text) {
+    if (!text) return text;
+    return marked(text).replace(/<\/?p>/g, '');
+}
 
 function getMonth(startDateStr) {
     switch (startDateStr.substr(5,2)) {
@@ -44,6 +56,9 @@ function render(resumeObject) {
                         r: 'pg',
                         d: 'mm'
                     });
+    }
+    if(resumeObject.basics && resumeObject.basics.summary) {
+        resumeObject.basics.summary = markdownToHtml(resumeObject.basics.summary);
     }
     if (resumeObject.basics.image || resumeObject.basics.gravatar) {
         resumeObject.photo = resumeObject.basics.image ? resumeObject.basics.image : resumeObject.basics.gravatar;
@@ -117,10 +132,16 @@ function render(resumeObject) {
             } else {
                 w.endDateYear = 'Present'
             }
+            if (w.summary) {
+                w.summary = markdownToHtml(w.summary);
+            }
             if (w.highlights) {
                 if (w.highlights[0]) {
                     if (w.highlights[0] != "") {
                         w.boolHighlights = true;
+                        w.highlights = _.map(w.highlights, function(h) {
+                            return markdownToHtml(h);
+                        });
                     }
                 }
             }
@@ -141,10 +162,16 @@ function render(resumeObject) {
             } else {
                 w.endDateYear = 'Present'
             }
+            if (w.summary) {
+                w.summary = markdownToHtml(w.summary);
+            }
             if (w.highlights) {
                 if (w.highlights[0]) {
                     if (w.highlights[0] != "") {
                         w.boolHighlights = true;
+                        w.highlights = _.map(w.highlights, function(h) {
+                            return markdownToHtml(h);
+                        });
                     }
                 }
             }
@@ -165,6 +192,22 @@ function render(resumeObject) {
                     p.endDateMonth = getMonth(p.endDate || "");
                 } else {
                     p.endDateYear = 'Present'
+                }
+                if (p.description) {
+                    p.description = markdownToHtml(p.description);
+                }
+                if (p.summary) {
+                    p.summary = markdownToHtml(p.summary);
+                }
+                if (p.highlights) {
+                    if (p.highlights[0]) {
+                        if (p.highlights[0] != "") {
+                            p.boolHighlights = true;
+                            p.highlights = _.map(p.highlights, function(h) {
+                                return markdownToHtml(h);
+                            });
+                        }
+                    }
                 }
             });
         }
@@ -214,6 +257,9 @@ function render(resumeObject) {
                 a.year = (a.date || "").substr(0,4);
                 a.day = (a.date || "").substr(8,2);
                 a.month = getMonth(a.date || "");
+                if (a.summary) {
+                    a.summary = markdownToHtml(a.summary);
+                }
             });
         }
     }
@@ -225,6 +271,9 @@ function render(resumeObject) {
                 a.year = (a.releaseDate || "").substr(0,4);
                 a.day = (a.releaseDate || "").substr(8,2);
                 a.month = getMonth(a.releaseDate || "");
+                if (a.summary) {
+                    a.summary = markdownToHtml(a.summary);
+                }
             });
         }
     }
