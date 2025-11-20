@@ -274,3 +274,8 @@ blockquote {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
+
+.bluesky-emoji {
+  font-size: 1.3em;
+  line-height: 1em;
+}

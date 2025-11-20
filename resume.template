@@ -232,7 +232,7 @@
             {{/basics.url}}
             {{#basics.profiles}}
             <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="{{iconClass}} fa-fw"></span></div>
+              <div class="icon pull-left text-center">{{#isBluesky}}<span class="bluesky-emoji">🦋</span>{{/isBluesky}}{{^isBluesky}}<span class="{{iconClass}} fa-fw"></span>{{/isBluesky}}</div>
               <div class="title pull-right">{{network}}</div>
               <div class="description pull-right"><a href="{{url}}" target="_blank">{{#username}}{{username}}{{/username}}{{^username}}{{url}}{{/username}}</a></div>
             </div>
