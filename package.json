@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-kendall",
+  "name": "jsonresume-theme-kendall-fcamblor",
   "version": "0.2.0",
   "description": "A JSON Resume theme built with bootstrap",
   "main": "index.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linuxbozo/jsonresume-theme-kendall.git"
+    "url": "https://github.com/fcamblor/jsonresume-theme-kendall.git"
   },
   "keywords": [
     "json",
@@ -24,7 +24,7 @@
     "theme"
   ],
   "bugs": {
-    "url": "https://github.com/linuxbozo/jsonresume-theme-kendall/issues"
+    "url": "https://github.com/fcamblor/jsonresume-theme-kendall/issues"
   },
-  "homepage": "https://github.com/linuxbozo/jsonresume-theme-kendall"
+  "homepage": "https://github.com/fcamblor/jsonresume-theme-kendall"
 }
