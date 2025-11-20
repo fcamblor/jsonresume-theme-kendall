@@ -154,6 +154,19 @@ function render(resumeObject) {
     if (resumeObject.projects && resumeObject.projects.length) {
         if (resumeObject.projects[0].name) {
             resumeObject.projectsBool = true;
+            _.each(resumeObject.projects, function(p){
+                if (p.startDate) {
+                    p.startDateYear = (p.startDate || "").substr(0,4);
+                    p.startDateMonth = getMonth(p.startDate || "");
+
+                }
+                if(p.endDate) {
+                    p.endDateYear = (p.endDate || "").substr(0,4);
+                    p.endDateMonth = getMonth(p.endDate || "");
+                } else {
+                    p.endDateYear = 'Present'
+                }
+            });
         }
     }
 
