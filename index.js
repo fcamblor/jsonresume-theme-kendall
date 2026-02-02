@@ -267,8 +267,8 @@ function render(resumeObject) {
         }
     }
 
-    if (resumeObject.looking_for && resumeObject.looking_for.items && resumeObject.looking_for.items.length) {
-        resumeObject.looking_for.items = _.map(resumeObject.looking_for.items, function(item) {
+    if (resumeObject.meta && resumeObject.meta.extras && resumeObject.meta.extras.looking_for && resumeObject.meta.extras.looking_for.items && resumeObject.meta.extras.looking_for.items.length) {
+        resumeObject.meta.extras.looking_for.items = _.map(resumeObject.meta.extras.looking_for.items, function(item) {
             item.text = markdownToHtml(item.text);
             if (item.subitems && item.subitems.length) {
                 item.subitems = _.map(item.subitems, function(subitem) {
@@ -279,8 +279,8 @@ function render(resumeObject) {
         });
     }
 
-    if (resumeObject.offering && resumeObject.offering.items && resumeObject.offering.items.length) {
-        resumeObject.offering.items = _.map(resumeObject.offering.items, function(item) {
+    if (resumeObject.meta && resumeObject.meta.extras && resumeObject.meta.extras.offering && resumeObject.meta.extras.offering.items && resumeObject.meta.extras.offering.items.length) {
+        resumeObject.meta.extras.offering.items = _.map(resumeObject.meta.extras.offering.items, function(item) {
             item.text = markdownToHtml(item.text);
             if (item.subitems && item.subitems.length) {
                 item.subitems = _.map(item.subitems, function(subitem) {
