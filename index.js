@@ -267,6 +267,20 @@ function render(resumeObject) {
         }
     }
 
+    if (resumeObject.certificates && resumeObject.certificates.length) {
+        if (resumeObject.certificates[0].name) {
+            resumeObject.certificatesBool = true;
+            _.each(resumeObject.certificates, function(c){
+                c.year = (c.date || "").substr(0,4);
+                c.day = (c.date || "").substr(8,2);
+                c.month = getMonth(c.date || "");
+                if (c.summary) {
+                    c.summary = markdownToHtml(c.summary);
+                }
+            });
+        }
+    }
+
     if (resumeObject.meta && resumeObject.meta.extras && resumeObject.meta.extras.looking_for && resumeObject.meta.extras.looking_for.items && resumeObject.meta.extras.looking_for.items.length) {
         resumeObject.meta.extras.looking_for.items = _.map(resumeObject.meta.extras.looking_for.items, function(item) {
             item.text = markdownToHtml(item.text);
