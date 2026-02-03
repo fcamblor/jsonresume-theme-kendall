@@ -79,7 +79,7 @@
             "summary": "I had the opportunity to accompany 4SH in its growth, from a small team of about ten people to more than 100 employees spread across several agencies. This evolution involved rethinking our practices, tools, and organization in order to grow without losing sight of our founding values. I am proud to have contributed to this transformation, which today enables 4SH to design and deliver high-impact digital products.",
             "url": "https://www.4sh.fr",
             "highlights": [
-                "From 10 to >110 people",
+                "Company scaled from 10 to 110+ employees",
                 "Tech leader on various projects of teams from 2 to 20",
                 "Worked for customers in Logistics (Cinatis, CHEP) and Real Estate (Naxos)",
                 "Dev Communities (59 devs) animator",
@@ -93,11 +93,29 @@
         },
         {
             "name": "DevXWeb (SASU)",
-            "position": "Founder",
+            "position": "Founder & Entrepreneur",
             "startDate": "2023-12-01",
-            "summary": "SASU created in order to monetize and sustain the developments made on the Voxxrin application.",
+            "summary": "Founded and self-funded DevXWeb SASU to transform the Voxxrin open-source project into a sustainable software product business. Building a B2B SaaS platform for conference organizers and attendees, managing all aspects from technical development to go-to-market strategy.",
             "highlights": [
-                "Funded the company"
+                "Founded and self-funded DevXWeb SASU as a micro-enterprise",
+                "Architect of business model: licensing, pricing, and revenue streams for Voxxrin SaaS",
+                "Full entrepreneurial ownership: product strategy, technical roadmap, market positioning",
+                "Led transition from side project to commercial product with sustainable revenue",
+                "Manage all business operations: finance, contracts, customer relations, product planning"
+            ]
+        },
+        {
+            "name": "ViteMaDose",
+            "position": "Frontend Web Developer",
+            "startDate": "2021-04-01",
+            "endDate": "2023-04-01",
+            "summary": "Volunteer work for the ViteMaDose website, an initiative launched by Guillaume Rozier to help people find COVID vaccination slots during a period of high demand for vaccines. Implementation of the ViteMaDose web/mobile application (PWA), participation in product/UX organization and coordination of dozens of volunteers who contributed to the initiative.",
+            "url": "https://vitemadose.covidtracker.fr/",
+            "highlights": [
+                "Regular peaks in traffic exceeding 1.2 million daily unique users",
+                "Peaks at 100k users/minutes",
+                "Hard skills: Typescript, vite, lit-element",
+                "Soft skills: Compromise Agreements, Open-source development"
             ]
         },
         {
@@ -113,20 +131,6 @@
                 "Marketing, Logistics, Partnerships",
                 "40k€-50k€ budget",
                 "Lots of network links with tech ecosystem (both at Bordeaux and France levels)"
-            ]
-        },
-        {
-            "name": "ViteMaDose",
-            "position": "Frontend Web Developer",
-            "startDate": "2021-04-01",
-            "endDate": "2023-04-01",
-            "summary": "Volunteer work for the ViteMaDose website, an initiative launched by Guillaume Rozier to help people find COVID vaccination slots during a period of high demand for vaccines. Implementation of the ViteMaDose web/mobile application (PWA), participation in product/UX organization and coordination of dozens of volunteers who contributed to the initiative.",
-            "url": "https://vitemadose.covidtracker.fr/",
-            "highlights": [
-                "Regular peaks in traffic exceeding 1.2 million daily unique users",
-                "Peaks at 100k users/minutes",
-                "Hard skills: Typescript, vite, lit-element",
-                "Soft skills: Compromise Agreements, Open-source development"
             ]
         },
         {
@@ -150,7 +154,8 @@
                 "Senior Software Engineer"
             ],
             "startDate": "2025-09-30",
-            "description": "I joined the DevX team to work on scaling up DevX AI at Betclic.",
+            "endDate": "2026-01-25",
+            "description": "I joined the DevX team at Betclic to scale AI adoption across 600+ developers, focusing on establishing best practices, benchmarking AI coding assistants, and defining governance guardrails for responsible AI usage in software development.",
             "keywords": [
                 "DevX",
                 "AI",
@@ -167,43 +172,6 @@
             "entity": "DevX team"
         },
         {
-            "name": "Training materials designer and trainer at 4SH Learning",
-            "roles": [
-                "Training", "Mentoring"
-            ],
-            "startDate": "2023-11-01",
-            "description": "I was involved in the design of various materials for 4SH's Learning offering.",
-            "keywords": [
-            ],
-            "highlights": [
-                "Java: Review of the course outline and materials",
-                "JS & TS (fundamentals 3d): Design the course outline, content, and exercises",
-                "Typescript (fundamentals 2d): Design the course outline, content, and exercises",
-                "Angular (advanced 3d): Evolution of media to incorporate the concepts of Signals",
-                "Git (advanced 1d): Design the course outline, content, and exercises"
-            ],
-            "entity": "DevX team"
-        }, 
-        {
-            "name": "Voxxrin 3",
-            "roles": [
-                "Solution Architect and Implementor"
-            ],
-            "startDate": "2023-04-01",
-            "description": "Voxxrin is a conference companion SaaS, providing a good experience when attending a conference (scheduling, favorites management, gathering feedbacks for speakers..)",
-            "url": "https://www.voxxr.in",
-            "keywords": [
-                "Google Firestore", "Vue3", "Typescript", "Communication", "Product Management", "Marketing Strategy"
-            ],
-            "highlights": [
-                "Marketted the solution through different conferences",
-                "Implemented all the fetures",
-                "Operated the infrastructure",
-                "Gathered and prioritized users' feedbacks",
-                "Voxxrin was my first experience as a Software Editor"
-            ]
-        }, 
-        {
             "name": "Marguerite Mobile",
             "roles": [
                 "Tech Lead"
@@ -218,8 +186,46 @@
                 "Geoprospecting map (MapBox) for advisors",
                 "Application build matrix (local/remote, android/ios, appstore/enterprise, physical device/emulator)",
                 "White label management and packaging",
-                "Implementation of “speech to form” based on the Illuin Voice AI solution",
+                "Implementation of 'speech to form' based on the Illuin Voice AI solution",
                 "Electronic document signing (visit vouchers)"
+            ]
+        },
+        {
+            "name": "Training Materials Designer and Trainer at 4SH Learning",
+            "roles": [
+                "Training", "Mentoring"
+            ],
+            "startDate": "2023-11-01",
+            "description": "I was involved in the design of various materials for 4SH Learning offering.",
+            "keywords": [
+                "TypeScript", "JavaScript", "Angular", "Git", "Training Design", "Curriculum Development", "Technical Documentation"
+            ],
+            "highlights": [
+                "Java: Review of the course outline and materials",
+                "JS & TS (fundamentals 3d): Design the course outline, content, and exercises",
+                "Typescript (fundamentals 2d): Design the course outline, content, and exercises",
+                "Angular (advanced 3d): Evolution of media to incorporate the concepts of Signals",
+                "Git (advanced 1d): Design the course outline, content, and exercises"
+            ],
+            "entity": "4SH"
+        },
+        {
+            "name": "Voxxrin 3",
+            "roles": [
+                "Solution Architect and Implementor"
+            ],
+            "startDate": "2023-04-01",
+            "description": "Voxxrin is a conference companion SaaS, providing a good experience when attending a conference (scheduling, favorites management, gathering feedbacks for speakers..)",
+            "url": "https://www.voxxr.in",
+            "keywords": [
+                "Google Firestore", "Vue3", "Typescript", "Communication", "Product Management", "Marketing Strategy"
+            ],
+            "highlights": [
+                "Marketted the solution through different conferences",
+                "Implemented all the features",
+                "Operated the infrastructure",
+                "Gathered and prioritized users' feedbacks",
+                "Voxxrin was my first experience as a Software Editor"
             ]
         },
         {
@@ -323,7 +329,8 @@
             "name": "Claude Code in Action",
             "date": "2025-09-01",
             "issuer": "Anthropic",
-            "url": "https://verify.skilljar.com/c/4gmmmdowa6rg"
+            "url": "https://verify.skilljar.com/c/4gmmmdowa6rg",
+            "summary": "Certification in AI-powered development tools and workflows using Claude Code CLI"
         }
     ],
     "publications": [
