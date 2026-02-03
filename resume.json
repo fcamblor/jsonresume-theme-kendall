@@ -1,0 +1,513 @@
+{
+    "meta": {
+        "theme": "kendall-fcamblor",
+        "extras": {
+            "looking_for": {
+                "items": [
+                    {
+                        "text": "**Staff Engineering** trajectory (adapting from ESN **service expertise** model to software editor structure - willing learning curve)"
+                    },
+                    {
+                        "text": "Strong **AI focus**: DevX or GenAI"
+                    },
+                    {
+                        "text": "Environment where **initiative quickly produces measurable on-the-ground impact**"
+                    }
+                ]
+            },
+            "offering": {
+                "items": [
+                    {
+                        "text": "**Motivation & curiosity**: reviewing **1000+ DevoxxFR** talk proposals annually since 2019 as selection committee member"
+                    },
+                    {
+                        "text": "**Proven impact**: BDX I/O conference creation, ViteMaDose handling **1M users/min** peaks, Voxxrin SaaS, **10-year** worldwide CHEP project"
+                    },
+                    {
+                        "text": "**Team dynamics & knowledge sharing**: fostered knowledge-sharing culture at 4SH's **~50-dev** technical community, enabling mutual help and collective skill growth"
+                    },
+                    {
+                        "text": "**Expertise areas**",
+                        "subitems": [
+                            "**AI** applied daily: agents, MCP, assistant benchmarking, RAG",
+                            "**Fullstack TS**: JS/TS trainings, Angular/React/Vue3, mobile apps on stores, NestJS",
+                            "**Strong JVM** background: former JUG Leader"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "basics": {
+        "name": "Frédéric Camblor",
+        "label": "Senior Fullstack Software Engineer on Web/Mobile apps",
+        "image": "https://2.gravatar.com/avatar/d6ce7477c41fbbf9427562ef52e66f46e8cb776ccfb2fe55876813697c5f669c?size=512&d=initials",
+        "email": "fcamblor@gmail.com",
+        "phone": "(+33)636007081",
+        "url": "https://fcamblor.wordpress.com/",
+        "summary": "Experienced full-stack web developer with a proven history of building impactful web and mobile applications, combining technical excellence, product mindset, and user experience focus.",
+        "location": {
+            "address": "37 rue Jean Moulin",
+            "postalCode": "33140",
+            "city": "Villenave d'Ornon (Bordeaux suburbs)",
+            "countryCode": "FR",
+            "region": "Nouvelle Aquitaine"
+        },
+        "profiles": [
+            {
+                "network": "Bluesky",
+                "username": "fred.camblor.fr",
+                "url": "https://bsky.app/fred.camblor.fr"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "frederic-camblor",
+                "url": "https://www.linkedin.com/in/frederic-camblor/"
+            },
+            {
+                "network": "Twitter",
+                "username": "fcamblor",
+                "url": "https://x.com/fcamblor"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "4SH",
+            "position": "Senior Software Engineer",
+            "startDate": "2011-07-08",
+            "summary": "I had the opportunity to accompany 4SH in its growth, from a small team of about ten people to more than 100 employees spread across several agencies. This evolution involved rethinking our practices, tools, and organization in order to grow without losing sight of our founding values. I am proud to have contributed to this transformation, which today enables 4SH to design and deliver high-impact digital products.",
+            "url": "https://www.4sh.fr",
+            "highlights": [
+                "From 10 to >110 people",
+                "Tech leader on various projects of teams from 2 to 20",
+                "Worked for customers in Logistics (Cinatis, CHEP) and Real Estate (Naxos)",
+                "Dev Communities (59 devs) animator",
+                "AI (RAG, daily usage, vibe coding, tooling)",
+                "Training materials conceptor",
+                "Trainer on multiple courses (TS, JS, Angular, Git)",
+                "Speaker on multiple internal workshops",
+                "Hard skills: Typescript, Git, Trainer, Angular, AI, Java, Spring, Maven",
+                "Soft skills: Technical leadership at the company level, Tech scouting, Mentoring and knowledge sharing, Complex problem solving, Clear communication, Ownership and accountability"
+            ]
+        },
+        {
+            "name": "DevXWeb (SASU)",
+            "position": "Founder",
+            "startDate": "2023-12-01",
+            "summary": "SASU created in order to monetize and sustain the developments made on the Voxxrin application.",
+            "highlights": [
+                "Funded the company"
+            ]
+        },
+        {
+            "name": "BDX I/O Conference",
+            "position": "Founder and President",
+            "startDate": "2013-09-01",
+            "endDate": "2017-01-01",
+            "summary": "Launch and organization of the BDX I/O conference for developers in the Bordeaux region.",
+            "url": "https://www.bdxio.fr",
+            "highlights": [
+                "512 attendees and 50 speakers",
+                "Event sold out few weeks before the conference",
+                "Marketing, Logistics, Partnerships",
+                "40k€-50k€ budget",
+                "Lots of network links with tech ecosystem (both at Bordeaux and France levels)"
+            ]
+        },
+        {
+            "name": "ViteMaDose",
+            "position": "Frontend Web Developer",
+            "startDate": "2021-04-01",
+            "endDate": "2023-04-01",
+            "summary": "Volunteer work for the ViteMaDose website, an initiative launched by Guillaume Rozier to help people find COVID vaccination slots during a period of high demand for vaccines. Implementation of the ViteMaDose web/mobile application (PWA), participation in product/UX organization and coordination of dozens of volunteers who contributed to the initiative.",
+            "url": "https://vitemadose.covidtracker.fr/",
+            "highlights": [
+                "Regular peaks in traffic exceeding 1.2 million daily unique users",
+                "Peaks at 100k users/minutes",
+                "Hard skills: Typescript, vite, lit-element",
+                "Soft skills: Compromise Agreements, Open-source development"
+            ]
+        },
+        {
+            "name": "SQLI",
+            "position": "J2EE Tech Lead & Trainer",
+            "startDate": "2006-10-01",
+            "endDate": "2011-07-07",
+            "summary": "Participation in pre-sales and then in the launch of the Bordeaux Service Center, which increased the Bordeaux agency's workforce from 15 people when I arrived in 2006 to more than 75 people when I left in 2011. Support for teams at the Bordeaux Service Center, particularly on projects for Banque Postale.",
+            "url": "https://www.sqli.com/",
+            "highlights": [
+                "Participated to Service Center creation",
+                "Worked for La Banque Postale, Bordeaux Metropole, Lectra",
+                "Trainer on multiple courses: Maven, Java, J2EE, Git, Liferay"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "AI Empowered DevX Program",
+            "roles": [
+                "Senior Software Engineer"
+            ],
+            "startDate": "2025-09-30",
+            "description": "I joined the DevX team to work on scaling up DevX AI at Betclic.",
+            "keywords": [
+                "DevX",
+                "AI",
+                "MCP",
+                "AI Rules"
+            ],
+            "highlights": [
+                "DevX for 600+ devs",
+                "Tracking AI adoption metrics",
+                "Evaluated and benchmarked AI coding assistants",
+                "Defined best practices and guardrails for AI usage across multiple tech stacks",
+                "Provided senior-level guidance on AI tooling, context engineering, and developer enablement"
+            ],
+            "entity": "DevX team"
+        },
+        {
+            "name": "Training materials designer and trainer at 4SH Learning",
+            "roles": [
+                "Training", "Mentoring"
+            ],
+            "startDate": "2023-11-01",
+            "description": "I was involved in the design of various materials for 4SH's Learning offering.",
+            "keywords": [
+            ],
+            "highlights": [
+                "Java: Review of the course outline and materials",
+                "JS & TS (fundamentals 3d): Design the course outline, content, and exercises",
+                "Typescript (fundamentals 2d): Design the course outline, content, and exercises",
+                "Angular (advanced 3d): Evolution of media to incorporate the concepts of Signals",
+                "Git (advanced 1d): Design the course outline, content, and exercises"
+            ],
+            "entity": "DevX team"
+        }, 
+        {
+            "name": "Voxxrin 3",
+            "roles": [
+                "Solution Architect and Implementor"
+            ],
+            "startDate": "2023-04-01",
+            "description": "Voxxrin is a conference companion SaaS, providing a good experience when attending a conference (scheduling, favorites management, gathering feedbacks for speakers..)",
+            "url": "https://www.voxxr.in",
+            "keywords": [
+                "Google Firestore", "Vue3", "Typescript", "Communication", "Product Management", "Marketing Strategy"
+            ],
+            "highlights": [
+                "Marketted the solution through different conferences",
+                "Implemented all the fetures",
+                "Operated the infrastructure",
+                "Gathered and prioritized users' feedbacks",
+                "Voxxrin was my first experience as a Software Editor"
+            ]
+        }, 
+        {
+            "name": "Marguerite Mobile",
+            "roles": [
+                "Tech Lead"
+            ],
+            "startDate": "2024-03-01",
+            "endDate": "2025-06-01",
+            "description": "The Marguerite Mobile app aims to provide support to Naxos real estate advisors (Arche group) on the go. I am working as tech lead on setting up the technical stack and integrating the various screens of the app developed in React Native.",
+            "keywords": [
+                "React Native", "Expo", "EAS", "Realm Database", "Zustand"
+            ],
+            "highlights": [
+                "Geoprospecting map (MapBox) for advisors",
+                "Application build matrix (local/remote, android/ios, appstore/enterprise, physical device/emulator)",
+                "White label management and packaging",
+                "Implementation of “speech to form” based on the Illuin Voice AI solution",
+                "Electronic document signing (visit vouchers)"
+            ]
+        },
+        {
+            "name": "CHEP Carrier Management Suite",
+            "roles": [
+                "Tech Lead"
+            ],
+            "startDate": "2015-01-01",
+            "endDate": "2023-11-01",
+            "description": "Full featured app suite designed for carriers & drivers worldwide (EU, US, Australia markets). Made of a Mobile hybrid application, an API Backend and a Desktop backoffice webapp.",
+            "keywords": [
+                "React Native", "Expo", "EAS", "Realm Database", "Zustand"
+            ],
+            "highlights": [
+                "~4000 daily single users (as of end 2023)",
+                "Available both on Android and iOS",
+                "At the origin of the project in 2014 and developed it over 9 years across multiple major milestones",
+                "Went from 1-army developer to a 10-15 people team size (with 6-7 full time devs during peaks)",
+                "M1(2014): Bootstrapped the initial Carrier Mobile App for materials tracking (pick & drop)",
+                "M2(2016): Creation of a backend monolith bridging with other CHEP Services (SAP, TMS, CRM, EAI)",
+                "M3(2016): 16KLoC codebase incrementally migrated to Typescript",
+                "M4(2017): Backoffice app creation for CHEP Operators",
+                "M5(2018): Industrialised release processes with docker builds in Google Cloud Build and Bitrise",
+                "M6(2020): New TMS integration: Blueyonder",
+                "M7(2021): New lightweight app named CICO",
+                "M8(2021): Moved from enterprise store to App Stores",
+                "M9(2023): Introduced Kafka into the backend stack, transitioning to an event-based architecture",
+                "160KLoC of TS + 170KLoC of Java when I handed over the project in 2024",
+                "Hard skills: Typescript, BackboneJS, Java, Apache Cordova, Spring Boot, Bitrise, Google Cloud Build, Angular, Firebase, Mapstruct, JPA, Kafka, Microsoft Azure"
+            ]
+        },
+        {
+            "name": "ViteMaDose",
+            "roles": [
+                "Frontend Web Developer"
+            ],
+            "startDate": "2021-04-01",
+            "endDate": "2023-04-01",
+            "description": "The ViteMaDose project is an initiative by Guillaume Rozier (CovidTracker) that was designed to make it easier to find COVID vaccination slots during a period of vaccine shortages during the COVID pandemic in 2021.",
+            "keywords": [
+                "Vite", "Lit-Element", "Architecture", "Typescript", "Compromise Agreement, Open-Source Development"
+            ],
+            "highlights": [
+                "Unified frontend aggregating vaccine slot availability across major booking platforms",
+                "High-load PWA implementation handling up to 1.2M daily users and 100k+ users per minute",
+                "Rapid delivery of the Chronodose feature within days following national policy changes",
+                "Product and UX co-design for a large-scale citizen-facing application",
+                "Coordination and onboarding of dozens of open-source volunteer contributors"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "BDX I/O Association",
+            "position": "Co-creator of the BDX I/O conference for developers in Bordeaux",
+            "startDate": "2013-11-01",
+            "endDate": "2016-12-01",
+            "summary": "Led volunteer team to organize and scale a successful tech conference in Bordeaux, managing logistics, budget, marketing, and attendee experience from 256 to 800+ attendees",
+            "highlights": [
+               "Created and led a team of 7 volunteers to organize a 256-attendee tech conference in Bordeaux",
+               "Raised a €15k budget from local tech companies and managed venue logistics at ENSEIRB amphitheaters",
+               "Achieved a sold-out first edition and scaled the event to 512 attendees in subsequent years",
+               "Facilitated video recording, livestreaming, ticketing, spatial organization, and attendee catering",
+               "Built long-term engagement with attendees and corporate partners, enabling growth to 800+ attendees at the Bordeaux Convention Center"
+            ]
+        },
+        {
+            "organization": "Devoxx France",
+            "position": "Member of the Devoxx France talks selection committee",
+            "startDate": "2019-12-01",
+            "summary": "Reviewed 1000+ talk proposals annually for Devoxx France, contributing to community engagement, technical discussions, and incremental UX improvements of the CFP tool.",
+            "highlights": [
+                 "Reviewed over 1000 talk proposals each year, ensuring high-quality content selection",
+                 "Engaged with the French and international developer community on current technical challenges",
+                 "Provided feedback and improvements to the CFP platform to enhance user experience",
+                 "Actively participated in knowledge sharing and trend spotting within the community",
+                 "Contributed to the continuous evolution of conference content and submission processes"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "MIAGe (Méthodes Informatiques Appliquées à la Gestion",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2013-09-01",
+            "endDate": "2016-09-01"
+        },
+        {
+            "institution": "Université Bordeaux I",
+            "area": "Software Development",
+            "studyType": "Licence",
+            "startDate": "2003-09-01",
+            "endDate": "2006-09-01"
+        }
+    ],
+    "awards": [
+    ],
+    "certificates": [
+        {
+            "name": "Claude Code in Action",
+            "date": "2025-09-01",
+            "issuer": "Anthropic",
+            "url": "https://verify.skilljar.com/c/4gmmmdowa6rg"
+        }
+    ],
+    "publications": [
+        {
+            "name": "TypeScript dès lundi sur votre App Legacy (Frédéric Camblor)",
+            "publisher": "Devoxx France",
+            "releaseDate": "2017-04-23",
+            "url": "https://www.youtube.com/watch?v=r0zxw423gm4",
+            "summary": "Presented a talk at Devoxx France 2017 on progressively migrating a legacy JavaScript application to TypeScript, covering strategies and best practices."
+        },
+        {
+            "name": "Et si votre backend était une Google Spreadsheet ?",
+            "publisher": "Devoxx France",
+            "releaseDate": "2017-04-24",
+            "url": "https://www.youtube.com/watch?v=ZPIgNvMhFZA",
+            "summary": "Delivered a talk on Google Spreadsheets at Devoxx France 2017, exploring advanced features and practical use cases."
+        },
+        {
+            "name": "Back to Basics : Ne perdez plus votre Temps avec les Dates",
+            "publisher": "Devoxx France",
+            "releaseDate": "2019-04-25",
+            "url": "https://www.youtube.com/watch?v=_ApiF_7MzM0",
+            "summary": "Explores the complexities of time management in client/server applications, covering timezones, DST, ISO 8601, and real-world scenarios to help developers ask the right questions when handling dates and times."
+        },
+        {
+            "name": "Coder des WebComponents en 2021: simple, léger et rapide avec lit-element et Vite",
+            "publisher": "4SH Workshop",
+            "releaseDate": "2021-03-01",
+            "url": "https://www.youtube.com/watch?v=2YmcaN1-cYQ",
+            "summary": "Conducted a 4SH workshop in March 2021 on LitElement, a lightweight library for building WebComponents."
+        },
+        {
+            "name": "Fullstack Typescript",
+            "publisher": "BordeauxJS",
+            "releaseDate": "2023-11-09",
+            "url": "https://slides.com/fredericcamblor/fullstack-typescript-d3e717",
+            "summary": "Presented at Bordeaux JS on November 9th about building a fullstack TypeScript application, covering architecture, tooling, and best practices."
+        }
+    ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Specialist",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "Angular",
+        "Vue3",
+        "LitElement",
+        "BackboneJS",
+        "SPA",
+        "Browser DevTools"
+      ]
+    },
+    {
+      "name": "Hybrid & Progressive Web Apps",
+      "level": "Specialist",
+      "keywords": [
+        "Apache Cordova",
+        "PWA"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "level": "Specialist",
+      "keywords": [
+        "Java",
+        "Spring Boot",
+        "Node.js",
+        "Maven",
+        "JPA",
+        "Spring"
+      ]
+    },
+    {
+      "name": "Database & State Management",
+      "level": "Specialist",
+      "keywords": [
+        "Firestore",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Version Control & Build Automation",
+      "level": "Specialist",
+      "keywords": [
+        "Git",
+        "Build automation"
+      ]
+    },
+    {
+      "name": "Software Architecture & Design",
+      "level": "Specialist",
+      "keywords": [
+        "Fullstack architecture",
+        "Solution architecture",
+        "Monorepo strategies",
+        "Modular design",
+        "Event-based architecture"
+      ]
+    },
+    {
+      "name": "Teaching & Mentoring",
+      "level": "Specialist",
+      "keywords": [
+        "Trainer",
+        "Knowledge sharing",
+        "Mentoring",
+        "Technical leadership",
+        "Ownership and accountability"
+      ]
+    },
+    {
+      "name": "React Native",
+      "level": "Advanced",
+      "keywords": [
+        "React Native",
+        "Expo",
+        "EAS",
+        "Realm Database",
+        "Zustand"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Advanced",
+      "keywords": [
+        "Google Cloud Build",
+        "Bitrise",
+        "Docker",
+        "Firebase",
+        "Microsoft Azure",
+        "Kafka",
+        "Sentry"
+      ]
+    },
+    {
+      "name": "Testing & Quality Assurance",
+      "level": "Advanced",
+      "keywords": [
+        "Automatic testing"
+      ]
+    },
+    {
+      "name": "AI",
+      "level": "Advanced",
+      "keywords": [
+        "AI tooling",
+        "RAG",
+        "Context engineering",
+        "DevX AI",
+        "Prompt engineering"
+      ]
+    },
+    {
+      "name": "Product & UX",
+      "level": "Advanced",
+      "keywords": [
+        "Product management",
+        "UX design"
+      ]
+    }
+  ],
+    "languages": [
+        {
+            "language": "French",
+            "fluency": "Native or bilingual proficiency"
+        },
+        {
+            "language": "English",
+            "fluency": "Professional working proficiency"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Kiteboarding",
+            "keywords": []
+        },
+        {
+            "name": "Wingfoiling",
+            "keywords": []
+        }
+    ],
+    "references": []
+}
