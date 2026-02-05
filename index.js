@@ -308,7 +308,7 @@ function render(resumeObject) {
     if (resumeObject.publications && resumeObject.publications.length) {
         if (resumeObject.publications[0].name) {
             resumeObject.publicationsBool = true;
-            _.each(resumeObject.publications, function(a){
+            _.each(resumeObject.publications.reverse(), function(a){
                 a.year = (a.releaseDate || "").substr(0,4);
                 a.day = (a.releaseDate || "").substr(8,2);
                 a.month = getMonth(a.releaseDate || "");
