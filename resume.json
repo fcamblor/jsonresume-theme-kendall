@@ -8,7 +8,7 @@
                         "text": "**Staff Engineering** trajectory (adapting from ESN **service expertise** model to software editor structure - willing learning curve)"
                     },
                     {
-                        "text": "Strong **AI focus**: DevX or GenAI"
+                        "text": "Strong **AI focus**: DevX and/or GenAI"
                     },
                     {
                         "text": "Environment where **initiative quickly produces measurable on-the-ground impact**"
@@ -21,15 +21,15 @@
                         "text": "**Motivation & curiosity**: reviewing **1000+ DevoxxFR** talk proposals annually since 2019 as selection committee member"
                     },
                     {
-                        "text": "**Proven impact**: BDX I/O conference creation, ViteMaDose handling **1M users/min** peaks, Voxxrin SaaS, **10-year** worldwide CHEP project"
+                        "text": "**Team dynamics & knowledge sharing**: fostered knowledge-sharing culture at 4SH's **~50-dev** technical community, enabling mutual help and collective skill growth"
                     },
                     {
-                        "text": "**Team dynamics & knowledge sharing**: fostered knowledge-sharing culture at 4SH's **~50-dev** technical community, enabling mutual help and collective skill growth"
+                        "text": "**Proven impact**: **BDX I/O conference creator**, ViteMaDose handling **1M users/min** peaks, Voxxrin SaaS, **10-year** worldwide CHEP project"
                     },
                     {
                         "text": "**Expertise areas**",
                         "subitems": [
-                            "**AI** applied daily: agents, MCP, assistant benchmarking, RAG",
+                            "**AI** applied daily: agents, MCP, assistant benchmarking, RAG, worktrees and parallelization. Strong daily use of Claude Code since Oct. 2025.",
                             "**Fullstack TS**: JS/TS trainings, Angular/React/Vue3, mobile apps on stores, NestJS",
                             "**Strong JVM** background: former JUG Leader"
                         ]
@@ -40,11 +40,10 @@
     },
     "basics": {
         "name": "Frédéric Camblor",
-        "label": "Senior Fullstack Software Engineer on Web/Mobile apps",
+        "label": "Senior Fullstack AI Engineer on Web/Mobile apps",
         "image": "https://2.gravatar.com/avatar/d6ce7477c41fbbf9427562ef52e66f46e8cb776ccfb2fe55876813697c5f669c?size=512&d=initials",
-        "email": "fcamblor@gmail.com",
+        "email": "fred@camblor.fr",
         "phone": "(+33)636007081",
-        "url": "https://fcamblor.wordpress.com/",
         "summary": "Experienced full-stack web developer with a proven history of building impactful web and mobile applications, combining technical excellence, product mindset, and user experience focus.",
         "location": {
             "address": "37 rue Jean Moulin",
@@ -149,6 +148,31 @@
     ],
     "projects": [
         {
+            "name": "Jarvis @ Ecomicro",
+            "roles": [
+                "Senior Technical & AI leader"
+            ],
+            "startDate": "2026-02-23",
+            "description": "As Tech Lead on the Jarvis project for Ecomicro, we digitalized consumer electronics lifecycle management, covering collection, sorting, refurbishment, and recycling processes at Ecomicro. I focused on scaling a robust, AI-augmented engineering environment while ensuring high code quality and sustainable architecture practices.",
+            "keywords": [
+              "Kotlin",
+              "Angular",
+              "Hexagonal Architecture",
+              "Claude Code",
+              "AI harness",
+              "AI-Assisted Code Reviews"
+            ],
+            "highlights": [
+              "Successfully ramped up on a bootstrapped project after 6 months, ensuring continuity in delivery",
+              "Led and mentored junior developers, fostering skill growth and AI engineering best practices",
+              "Integrated AI-assisted development workflows for coding and code reviews",
+              "Designed and continuously improved an internal AI harness to enhance developer productivity and code quality",
+              "Fostered clean architecture principles (Hexagonal Architecture) across backend and frontend layers",
+              "Actively contributed to regular design reviews with a strong design-to-cost mindset, ensuring alignment between technical choices and business constraints"
+            ],
+            "entity": "4SH"
+        },
+        {
             "name": "AI Empowered DevX Program",
             "roles": [
                 "Senior Software Engineer"
@@ -165,7 +189,7 @@
             "highlights": [
                 "DevX for 600+ devs",
                 "Tracking AI adoption metrics",
-                "Evaluated and benchmarked AI coding assistants",
+                "Evaluated and benchmarked AI coding assistants (Windsurf, Cursor, Copilot, Claude Code)",
                 "Defined best practices and guardrails for AI usage across multiple tech stacks",
                 "Provided senior-level guidance on AI tooling, context engineering, and developer enablement"
             ],
@@ -188,7 +212,8 @@
                 "White label management and packaging",
                 "Implementation of 'speech to form' based on the Illuin Voice AI solution",
                 "Electronic document signing (visit vouchers)"
-            ]
+            ],
+            "entity": "4SH"
         },
         {
             "name": "Training Materials Designer and Trainer at 4SH Learning",
@@ -226,7 +251,8 @@
                 "Operated the infrastructure",
                 "Gathered and prioritized users' feedbacks",
                 "Voxxrin was my first experience as a Software Editor"
-            ]
+            ],
+            "entity": "DevXWeb"
         },
         {
             "name": "CHEP Carrier Management Suite",
@@ -255,7 +281,8 @@
                 "M9(2023): Introduced Kafka into the backend stack, transitioning to an event-based architecture",
                 "160KLoC of TS + 170KLoC of Java when I handed over the project in 2024",
                 "Hard skills: Typescript, BackboneJS, Java, Apache Cordova, Spring Boot, Bitrise, Google Cloud Build, Angular, Firebase, Mapstruct, JPA, Kafka, Microsoft Azure"
-            ]
+            ],
+            "entity": "4SH"
         },
         {
             "name": "ViteMaDose",
@@ -368,6 +395,27 @@
             "releaseDate": "2023-11-09",
             "url": "https://slides.com/fredericcamblor/fullstack-typescript-d3e717",
             "summary": "Presented at Bordeaux JS on November 9th about building a fullstack TypeScript application, covering architecture, tooling, and best practices."
+        },
+        {
+            "name": "Announcing Voxxrin 3",
+            "publisher": "LinkedIn",
+            "releaseDate": "2023-10-01",
+            "url": "https://www.linkedin.com/pulse/announcing-voxxrin-3-fr%C3%A9d%C3%A9ric-camblor-cvs7e/",
+            "summary": "Announcement of Voxxrin 3 launch, a redesigned mobile application using Capacitor, Ionic 7, Vue 3 and Firebase, deployed at Devoxx BE 2023 with over 55,000 favorites."
+        },
+        {
+            "name": "Claude Code au quotidien - Gestion des quotas",
+            "publisher": "LinkedIn",
+            "releaseDate": "2026-01-01",
+            "url": "https://www.linkedin.com/pulse/claude-code-au-quotidien-g%C3%A9rer-ses-quotas-fr%C3%A9d%C3%A9ric-camblor-hygde/",
+            "summary": "Sharing strategies to optimize Claude Pro usage by intelligently managing token quotas across multiple accounts to maximize productivity."
+        },
+        {
+            "name": "IA au quotidien - Paralléliser sa production agentique de code",
+            "publisher": "LinkedIn",
+            "releaseDate": "2026-02-08",
+            "url": "https://www.linkedin.com/pulse/claude-code-au-quotidien-parall%C3%A9liser-ses-t%C3%A2ches-fr%C3%A9d%C3%A9ric-camblor-jqjpe/",
+            "summary": "Presenting my paradigm shift from sequential to parallel development by leveraging AI agents, Git worktrees, and Kanban orchestration to significantly accelerate delivery."
         }
     ],
   "skills": [
@@ -460,11 +508,12 @@
       "name": "Cloud & DevOps",
       "level": "Advanced",
       "keywords": [
-        "Google Cloud Build",
+        "Google Cloud",
+        "Microsoft Azure",
+        "AWS Cloud",
         "Bitrise",
         "Docker",
         "Firebase",
-        "Microsoft Azure",
         "Kafka",
         "Sentry"
       ]
@@ -483,8 +532,10 @@
         "AI tooling",
         "RAG",
         "Context engineering",
+        "Prompt engineering",
         "DevX AI",
-        "Prompt engineering"
+        "Parallelization",
+        "Vibe-kanban"
       ]
     },
     {
