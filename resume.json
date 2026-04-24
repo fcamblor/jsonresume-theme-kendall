@@ -498,13 +498,15 @@
       "name": "AI",
       "level": "Advanced",
       "keywords": [
-        "AI tooling",
-        "RAG",
+        "Claude Code",
+        "AI tooling", "Worktrees",
+        "Harness engineering",
         "Context engineering",
         "Prompt engineering",
         "DevX AI",
         "Parallelization",
-        "Vibe-kanban"
+        "Vibe-kanban", "Serena", "RTK",
+        "RAG"
       ]
     },
     {
