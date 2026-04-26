@@ -91,6 +91,14 @@ blockquote {
   font-weight: 700;
   text-transform: uppercase;
 }
+.box h2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.box.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
 
 #awards,
 #education{
@@ -173,6 +181,29 @@ blockquote {
 
 .job{
   margin-bottom: 15px;
+}
+.job.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+blockquote,
+.job,
+.job .job-details,
+#education > li,
+#awards > li,
+.contact-item,
+.list-group,
+.list-group-item,
+.publication,
+.skills,
+.interests {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.job .highlights {
+  break-after: avoid;
+  page-break-after: avoid;
 }
 .job .details {
   margin-left: 3%;
@@ -302,7 +333,6 @@ blockquote {
   border-bottom: 1px solid #eee;
 }
 
-
     </style>
     <style type="text/css" media="print">
     body {
@@ -322,14 +352,41 @@ a[href]:after {
   margin-bottom: -10px;
 }
 
+.box h2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.box.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+
 blockquote,
-#education,
-#awards,
+.job,
+.job .job-details,
+#education > li,
+#awards > li,
 .contact-item,
+.list-group,
+.list-group-item,
 .publication,
 .skills,
 .interests {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
   page-break-inside: avoid;
+}
+
+.job .highlights {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.job.page-break-before {
+  break-before: page;
+  display: block;
+  page-break-before: always;
 }
 
 .col-sm-5{
@@ -475,7 +532,7 @@ blockquote,
             </ul>
           </div>
           <!-- WORK EXPERIENCE -->
-          <div class="box">
+          <div class="box page-break-before">
             <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
               <div class="job clearfix">
                 <div class="row">
@@ -522,7 +579,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break page-break-before">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -538,7 +595,7 @@ blockquote,
                       Founded and self-funded DevXWeb SASU to transform the Voxxrin open-source project into a sustainable software product business. Building a B2B SaaS platform for conference organizers and attendees, managing all aspects from technical development to go-to-market strategy.
 
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>Self-funded</strong> DevXWeb SASU
 </li>
                         <li class="list-group-item"><strong>Architect</strong> of business model: licensing, pricing, and revenue streams for Voxxrin SaaS
@@ -554,7 +611,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -573,7 +630,7 @@ blockquote,
                       Volunteer work for the ViteMaDose website, an initiative launched by Guillaume Rozier to help people find COVID vaccination slots during a period of high demand for vaccines. Implementation of the ViteMaDose web/mobile application (PWA), participation in product/UX organization and coordination of dozens of volunteers who contributed to the initiative.
 
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item">Regular peaks in traffic exceeding <strong>1.2 million daily unique users</strong>
 </li>
                         <li class="list-group-item">Peaks at <strong>100k users/minutes</strong>
@@ -587,7 +644,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -606,7 +663,7 @@ blockquote,
                       Launch and organization of the BDX I/O conference for developers in the Bordeaux region.
 
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>512 attendees</strong> and <strong>50 speakers</strong>
 </li>
                         <li class="list-group-item">Event <strong>sold out</strong> few weeks before the conference
@@ -622,7 +679,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -641,7 +698,7 @@ blockquote,
                       Participation in pre-sales and then in the launch of the Bordeaux Service Center, which increased the Bordeaux agency&#39;s workforce from 15 people when I arrived in 2006 to more than 75 people when I left in 2011. Support for teams at the Bordeaux Service Center, particularly on projects for Banque Postale.
 
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item">Participated to <strong>Service Center creation</strong>
 </li>
                         <li class="list-group-item">Worked for La Banque Postale, Bordeaux Metropole, Lectra
@@ -655,9 +712,9 @@ blockquote,
               </div>
           </div>
           <!-- VOLUNTEER -->
-          <div class="box">
+          <div class="box page-break-before">
             <h2><i class= "fas fa-users ico"></i> Volunteer</h2>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">BDX I&#x2F;O Association</div>
@@ -671,7 +728,7 @@ blockquote,
                       Led volunteer team to organize and scale a successful tech conference in Bordeaux, managing logistics, budget, marketing, and attendee experience from 256 to 800+ attendees
 
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item">Created and <strong>led a team of 7 volunteers</strong> to organize a 256-attendee tech conference in Bordeaux
 </li>
                         <li class="list-group-item"><strong>Raised a €15k budget</strong> from local tech companies and managed venue logistics at ENSEIRB amphitheaters
@@ -687,7 +744,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">Devoxx France</div>
@@ -701,7 +758,7 @@ blockquote,
                       Reviewed 1000+ talk proposals annually for Devoxx France, contributing to community engagement, technical discussions, and incremental UX improvements of the CFP tool.
 
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>Reviewed over 1000 talk proposals</strong> each year, ensuring high-quality content selection
 </li>
                         <li class="list-group-item"><strong>Engaged with the French and international developer community</strong> on current technical challenges
@@ -719,9 +776,9 @@ blockquote,
               </div>
           </div>
           <!-- PROJECTS -->
-          <div class="box">
+          <div class="box page-break-before">
             <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -740,7 +797,7 @@ blockquote,
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item">Successfully <strong>ramped up quickly</strong> on a bootstrapped 6 months old project, ensuring continuity in delivery
 </li>
                         <li class="list-group-item"><strong>Led and mentored junior developers</strong>, fostering skill growth and AI engineering best practices
@@ -758,7 +815,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -777,7 +834,7 @@ blockquote,
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item">DevX for <strong>600+ devs</strong>
 </li>
                         <li class="list-group-item">Tracking <strong>AI adoption metrics</strong>
@@ -793,7 +850,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -812,7 +869,7 @@ blockquote,
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>Geoprospecting</strong> map (MapBox) for advisors
 </li>
                         <li class="list-group-item">Application <strong>build matrix</strong> (local/remote, android/ios, appstore/enterprise, physical device/emulator)
@@ -828,7 +885,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -847,7 +904,7 @@ blockquote,
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>Java</strong>: Review of the course outline and materials
 </li>
                         <li class="list-group-item"><strong>JS &amp; TS</strong> (fundamentals 3d): Design the course outline, content, and exercises
@@ -863,7 +920,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -885,7 +942,7 @@ blockquote,
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>Onwnership</strong> on the whole Voxxrin product
 </li>
                         <li class="list-group-item"><strong>Marketed</strong> the solution through different conferences
@@ -958,7 +1015,7 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix">
+              <div class="job clearfix avoid-page-break page-break-before">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -976,7 +1033,7 @@ blockquote,
                     <div class="description">
                       
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group avoid-page-break">
                         <li class="list-group-item"><strong>Unified frontend</strong> aggregating vaccine slot availability across major booking platforms
 </li>
                         <li class="list-group-item"><strong>High-load PWA implementation</strong> handling up to <strong>1.2M daily users</strong> with peaks of <strong>100k+ users per minute</strong>

@@ -18,6 +18,23 @@ function markdownToHtml(text) {
     return marked(text).replace(/<\/?p>/g, '');
 }
 
+function markPageBreaksAfterLongEntries(entries) {
+    if (!entries) return;
+
+    for (var i = 1; i < entries.length; i++) {
+        var previous = entries[i - 1];
+        var current = entries[i];
+
+        if (
+            previous.highlights &&
+            previous.highlights.length >= 8 &&
+            current.avoidJobPageBreak
+        ) {
+            current.forcePageBreakBefore = true;
+        }
+    }
+}
+
 function getMonth(startDateStr) {
     switch (startDateStr.substr(5,2)) {
     case '01':
@@ -142,6 +159,8 @@ function render(resumeObject) {
                 if (w.highlights[0]) {
                     if (w.highlights[0] != "") {
                         w.boolHighlights = true;
+                        w.avoidHighlightsPageBreak = w.highlights.length <= 6;
+                        w.avoidJobPageBreak = w.avoidHighlightsPageBreak;
                         w.highlights = _.map(w.highlights, function(h) {
                             return markdownToHtml(h);
                         });
@@ -149,6 +168,7 @@ function render(resumeObject) {
                 }
             }
         });
+        markPageBreaksAfterLongEntries(resumeObject.work);
     }
 
     if (resumeObject.volunteer && resumeObject.volunteer.length) {
@@ -172,6 +192,8 @@ function render(resumeObject) {
                 if (w.highlights[0]) {
                     if (w.highlights[0] != "") {
                         w.boolHighlights = true;
+                        w.avoidHighlightsPageBreak = w.highlights.length <= 6;
+                        w.avoidJobPageBreak = w.avoidHighlightsPageBreak;
                         w.highlights = _.map(w.highlights, function(h) {
                             return markdownToHtml(h);
                         });
@@ -179,6 +201,7 @@ function render(resumeObject) {
                 }
             }
         });
+        markPageBreaksAfterLongEntries(resumeObject.volunteer);
     }
 
     if (resumeObject.projects && resumeObject.projects.length) {
@@ -206,6 +229,8 @@ function render(resumeObject) {
                     if (p.highlights[0]) {
                         if (p.highlights[0] != "") {
                             p.boolHighlights = true;
+                            p.avoidHighlightsPageBreak = p.highlights.length <= 6;
+                            p.avoidJobPageBreak = p.avoidHighlightsPageBreak;
                             p.highlights = _.map(p.highlights, function(h) {
                                 return markdownToHtml(h);
                             });
@@ -213,6 +238,7 @@ function render(resumeObject) {
                     }
                 }
             });
+            markPageBreaksAfterLongEntries(resumeObject.projects);
         }
     }
 

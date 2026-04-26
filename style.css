@@ -78,6 +78,14 @@ blockquote {
   font-weight: 700;
   text-transform: uppercase;
 }
+.box h2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+.box.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
 
 #awards,
 #education{
@@ -160,6 +168,29 @@ blockquote {
 
 .job{
   margin-bottom: 15px;
+}
+.job.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+blockquote,
+.job,
+.job .job-details,
+#education > li,
+#awards > li,
+.contact-item,
+.list-group,
+.list-group-item,
+.publication,
+.skills,
+.interests {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.job .highlights {
+  break-after: avoid;
+  page-break-after: avoid;
 }
 .job .details {
   margin-left: 3%;
@@ -288,4 +319,3 @@ blockquote {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-

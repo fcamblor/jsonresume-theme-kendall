@@ -85,10 +85,10 @@
           {{/meta.extras.offering}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
-          <div class="box">
+          <div class="box page-break-before">
             <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
             {{#work}}
-              <div class="job clearfix">
+              <div class="job clearfix{{#avoidJobPageBreak}} avoid-page-break{{/avoidJobPageBreak}}{{#forcePageBreakBefore}} page-break-before{{/forcePageBreakBefore}}">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -119,7 +119,7 @@
                       {{{summary}}}
                       {{#boolHighlights}}
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group{{#avoidHighlightsPageBreak}} avoid-page-break{{/avoidHighlightsPageBreak}}">
                         {{#highlights}}
                         <li class="list-group-item">{{{.}}}</li>
                         {{/highlights}}
@@ -152,10 +152,10 @@
           {{/awardsBool}}
           {{#volunteerBool}}
           <!-- VOLUNTEER -->
-          <div class="box">
+          <div class="box page-break-before">
             <h2><i class= "fas fa-users ico"></i> Volunteer</h2>
             {{#volunteer}}
-              <div class="job clearfix">
+              <div class="job clearfix{{#avoidJobPageBreak}} avoid-page-break{{/avoidJobPageBreak}}{{#forcePageBreakBefore}} page-break-before{{/forcePageBreakBefore}}">
                 <div class="row">
                   <div class="details">
                     <div class="where">{{organization}}</div>
@@ -174,7 +174,7 @@
                       {{{summary}}}
                       {{#boolHighlights}}
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group{{#avoidHighlightsPageBreak}} avoid-page-break{{/avoidHighlightsPageBreak}}">
                         {{#highlights}}
                         <li class="list-group-item">{{{.}}}</li>
                         {{/highlights}}
@@ -189,10 +189,10 @@
           {{/volunteerBool}}
           {{#projectsBool}}
           <!-- PROJECTS -->
-          <div class="box">
+          <div class="box page-break-before">
             <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
             {{#projects}}
-              <div class="job clearfix">
+              <div class="job clearfix{{#avoidJobPageBreak}} avoid-page-break{{/avoidJobPageBreak}}{{#forcePageBreakBefore}} page-break-before{{/forcePageBreakBefore}}">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -227,7 +227,7 @@
                       {{{summary}}}
                       {{#boolHighlights}}
                       <div class="highlights">Highlights</div>
-                      <ul class="list-group">
+                      <ul class="list-group{{#avoidHighlightsPageBreak}} avoid-page-break{{/avoidHighlightsPageBreak}}">
                         {{#highlights}}
                         <li class="list-group-item">{{{.}}}</li>
                         {{/highlights}}

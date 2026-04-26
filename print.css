@@ -15,14 +15,41 @@ a[href]:after {
   margin-bottom: -10px;
 }
 
+.box h2 {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.box.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+
 blockquote,
-#education,
-#awards,
+.job,
+.job .job-details,
+#education > li,
+#awards > li,
 .contact-item,
+.list-group,
+.list-group-item,
 .publication,
 .skills,
 .interests {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
   page-break-inside: avoid;
+}
+
+.job .highlights {
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.job.page-break-before {
+  break-before: page;
+  display: block;
+  page-break-before: always;
 }
 
 .col-sm-5{
