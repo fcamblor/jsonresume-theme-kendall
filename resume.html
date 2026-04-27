@@ -343,8 +343,8 @@ blockquote,
 }
 
 .pdf-footer {
-  margin-top: 30px;
-  padding-top: 10px;
+  margin-top: 15px;
+  padding-top: 8px;
   border-top: 1px solid #eee;
   color: #888;
   font-size: 0.85em;
@@ -353,10 +353,86 @@ blockquote,
   color: #888;
 }
 
+.pdf-interactive-link {
+  margin-top: 8px;
+  font-size: 0.75em;
+  color: #888;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-transform: none;
+}
+.pdf-interactive-link a {
+  color: #5a8fb0;
+}
+
+body.pdf-mode {
+  font-size: 0.95em;
+}
+body.pdf-mode .container {
+  margin-top: 50px;
+}
+body.pdf-mode #photo-header {
+  margin-top: -45px;
+  margin-bottom: 5px;
+}
+body.pdf-mode #photo {
+  width: 110px;
+  height: 110px;
+  padding: 4px;
+}
+body.pdf-mode #photo img {
+  width: 102px;
+  height: 102px;
+}
+body.pdf-mode #text-header h1 {
+  font-size: 1.4em;
+}
+body.pdf-mode .box {
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+body.pdf-mode .section-bundle::before {
+  content: "";
+  display: block;
+  height: 28px;
+}
+body.pdf-mode .box.keep-together::before {
+  content: "";
+  display: block;
+  height: 14px;
+}
+body.pdf-mode .skills .item-skills {
+  height: 22px;
+  margin-bottom: 0;
+}
+body.pdf-mode .box.keep-together > h2:first-child {
+  margin-top: 0;
+}
+body.pdf-mode .box h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+body.pdf-mode .box .job:first-of-type,
+body.pdf-mode .box ul:first-of-type,
+body.pdf-mode .box .skills:first-of-type {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+body.pdf-mode .box.keep-together,
+body.pdf-mode .section-bundle {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+body.pdf-mode .container {
+  margin-bottom: 0;
+}
+
     </style>
     <style type="text/css" media="print">
     body {
-  font-size: .78em;
+  font-size: .95em;
   -webkit-print-color-adjust: exact;
 }
 
@@ -364,38 +440,7 @@ a[href]:after {
   content: none !important;
 }
 
-.container {
-  margin-top: 40px;
-}
-
-#photo-header {
-  margin-top: -38px;
-  margin-bottom: 0;
-}
-#photo {
-  width: 95px;
-  height: 95px;
-  padding: 3px;
-}
-#photo img {
-  width: 89px;
-  height: 89px;
-}
-#text-header h1 {
-  font-size: 1.25em;
-}
-#text-header:after {
-  margin-top: 5px;
-}
-
-.box {
-  margin-bottom: 6px;
-  padding-bottom: 2px;
-}
 .box h2 {
-  font-size: 1.2em;
-  margin-top: 4px;
-  margin-bottom: 4px;
   break-after: avoid;
   page-break-after: avoid;
 }
@@ -406,26 +451,8 @@ a[href]:after {
 }
 
 .box.keep-together {
-  break-inside: avoid !important;
-  page-break-inside: avoid !important;
-}
-
-.contact-item .icon {
-  padding: 6px;
-}
-.contact-item .title {
-  margin-top: 4px;
-}
-
-#education {
-  padding: 0.4em 0;
-}
-#education > li {
-  margin-bottom: 4px;
-}
-
-.list-group-item {
-  padding: 3px 12px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 blockquote,
@@ -542,7 +569,7 @@ blockquote,
           <!-- ABOUT ME -->
           <div class="box">
             <h2><i class="fas fa-user ico"></i> About</h2>
-            <p>Full-stack engineer delivering high-impact web &amp; mobile apps with strong product &amp; UX focus
+            <p><strong>Full-stack AI engineer delivering high-impact web &amp; mobile apps with strong product &amp; UX focus</strong>
 </p>
           </div>
           <!-- LOOKING FOR -->
@@ -598,8 +625,9 @@ blockquote,
             </ul>
           </div>
           <!-- WORK EXPERIENCE -->
-          <div class="box page-break-before">
+          <div class="box">
             <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+              
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
@@ -645,7 +673,9 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix avoid-page-break page-break-before">
+              
+              
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -677,6 +707,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -710,6 +742,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -745,6 +779,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -776,10 +812,12 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
           </div>
           <!-- VOLUNTEER -->
-          <div class="box page-break-before">
+          <div class="box">
             <h2><i class= "fas fa-users ico"></i> Volunteer</h2>
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -810,6 +848,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -840,10 +880,12 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
           </div>
           <!-- PROJECTS -->
-          <div class="box page-break-before">
+          <div class="box">
             <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -881,6 +923,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -916,6 +960,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -951,6 +997,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -986,6 +1034,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
@@ -1026,6 +1076,8 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
+              
               <div class="job clearfix">
                 <div class="row">
                   <div class="details">
@@ -1033,7 +1085,7 @@ blockquote,
                       CHEP Carrier Management Suite
                     </div>
                     <div class="description">
-                      Full featured app suite designed for carriers &amp;amp; drivers worldwide (EU, US, Australia markets). Made of a Mobile hybrid application, an API Backend and a Desktop backoffice webapp.
+                      Full featured app suite designed for carriers &amp; drivers worldwide (EU, US, Australia markets). Made of a Mobile hybrid application, an API Backend and a Desktop backoffice webapp.
 
                     </div>
                     <div class="year">January 2015 – November 2023</div>
@@ -1081,7 +1133,9 @@ blockquote,
                   </div>
                 </div>
               </div>
-              <div class="job clearfix avoid-page-break page-break-before">
+              
+              
+              <div class="job clearfix avoid-page-break">
                 <div class="row">
                   <div class="details">
                     <div class="where">
@@ -1115,6 +1169,7 @@ blockquote,
                   </div>
                 </div>
               </div>
+              
           </div>
         </div>
         <div class="col-xs-12 col-sm-5">
@@ -1175,7 +1230,7 @@ blockquote,
             </ul>
           </div>
           <!-- SKILLS -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-tasks ico"></i> Skills</h2>
             <div class="skills clearfix">
               <div class="item-skills">
@@ -1268,7 +1323,7 @@ blockquote,
             <div class="skills clearfix">
               <div class="item-skills">
                   AI
-                  <span class="skill-level skill-level-advanced">Advanced</span>
+                  <span class="skill-level skill-level-specialist">Specialist</span>
               </div>
               <div class="col-sm-offset-1 col-sm-12 clearfix">
                 <span class= "skill badge">Claude Code</span>
@@ -1469,7 +1524,7 @@ blockquote,
             </ul>
           </div>
           <!-- LANGUAGES -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-language ico"></i> Languages</h2>
             <ul class="list-group">
               <li class=" list-group-item">French<span class="skill badge pull-right">Native or bilingual proficiency</span></li>
