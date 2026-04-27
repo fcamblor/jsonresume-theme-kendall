@@ -201,7 +201,7 @@
                     </div>
                     {{#description}}
                     <div class="description">
-                      {{description}}
+                      {{{description}}}
                     </div>
                     {{/description}}
                     {{#url}}
@@ -309,7 +309,7 @@
                     </div>
                     {{#description}}
                     <div class="description">
-                      {{description}}
+                      {{{description}}}
                     </div>
                     {{/description}}
                     {{#url}}
