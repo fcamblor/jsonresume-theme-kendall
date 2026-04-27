@@ -378,11 +378,15 @@ body.pdf-mode .box {
   margin-bottom: 8px;
   padding-bottom: 4px;
 }
-body.pdf-mode .section-bundle::before,
-body.pdf-mode .box.keep-together::before {
+body.pdf-mode .section-bundle::before {
   content: "";
   display: block;
   height: 28px;
+}
+body.pdf-mode .box.keep-together::before {
+  content: "";
+  display: block;
+  height: 14px;
 }
 body.pdf-mode .skills .item-skills {
   height: 22px;
