@@ -30,6 +30,11 @@
             {{/photo}}
             <div id="text-header" {{^photo}}style="margin-top: 90px;"{{/photo}}>
               <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
+              {{#isPdfTarget}}
+              <div class="pdf-interactive-link">
+                Interactive resume&nbsp;: <a href="https://fcamblor.github.io/resume.html">https://fcamblor.github.io/resume.html</a>
+              </div>
+              {{/isPdfTarget}}
             </div>
           </div>
         </div>
@@ -179,9 +184,10 @@
           {{/meta.extras.offering}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
-          <div class="box page-break-before">
-            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
+          <div class="box">
+            {{^isPdfTarget}}<h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>{{/isPdfTarget}}
             {{#work}}
+              {{#isFirst}}<div class="section-bundle"><h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>{{/isFirst}}
               <div class="job clearfix{{#avoidJobPageBreak}} avoid-page-break{{/avoidJobPageBreak}}{{#forcePageBreakBefore}} page-break-before{{/forcePageBreakBefore}}">
                 <div class="row">
                   <div class="details">
@@ -223,6 +229,7 @@
                   </div>
                 </div>
               </div>
+              {{#isFirst}}</div>{{/isFirst}}
             {{/work}}
           </div>
           {{/workBool}}
@@ -246,9 +253,10 @@
           {{/awardsBool}}
           {{#volunteerBool}}
           <!-- VOLUNTEER -->
-          <div class="box page-break-before">
-            <h2><i class= "fas fa-users ico"></i> Volunteer</h2>
+          <div class="box">
+            {{^isPdfTarget}}<h2><i class= "fas fa-users ico"></i> Volunteer</h2>{{/isPdfTarget}}
             {{#volunteer}}
+              {{#isFirst}}<div class="section-bundle"><h2><i class= "fas fa-users ico"></i> Volunteer</h2>{{/isFirst}}
               <div class="job clearfix{{#avoidJobPageBreak}} avoid-page-break{{/avoidJobPageBreak}}{{#forcePageBreakBefore}} page-break-before{{/forcePageBreakBefore}}">
                 <div class="row">
                   <div class="details">
@@ -278,14 +286,16 @@
                   </div>
                 </div>
               </div>
+              {{#isFirst}}</div>{{/isFirst}}
             {{/volunteer}}
           </div>
           {{/volunteerBool}}
           {{#projectsBool}}
           <!-- PROJECTS -->
-          <div class="box page-break-before">
-            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+          <div class="box">
+            {{^isPdfTarget}}<h2><i class= "fas fa-code-branch ico"></i> Projects</h2>{{/isPdfTarget}}
             {{#projects}}
+              {{#isFirst}}<div class="section-bundle"><h2><i class= "fas fa-code-branch ico"></i> Projects</h2>{{/isFirst}}
               <div class="job clearfix{{#avoidJobPageBreak}} avoid-page-break{{/avoidJobPageBreak}}{{#forcePageBreakBefore}} page-break-before{{/forcePageBreakBefore}}">
                 <div class="row">
                   <div class="details">
@@ -331,6 +341,7 @@
                   </div>
                 </div>
               </div>
+              {{#isFirst}}</div>{{/isFirst}}
             {{/projects}}
           </div>
           {{/projectsBool}}
@@ -527,7 +538,7 @@
       {{#isPdfTarget}}
       <div class="row pdf-footer">
         <div class="col-xs-12 text-center">
-          <small>Version interactive&nbsp;: <a href="https://fcamblor.github.io/resume.html">https://fcamblor.github.io/resume.html</a></small>
+          <small>Interactive resume&nbsp;: <a href="https://fcamblor.github.io/resume.html">https://fcamblor.github.io/resume.html</a></small>
         </div>
       </div>
       {{/isPdfTarget}}

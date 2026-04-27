@@ -330,14 +330,26 @@ blockquote,
 }
 
 .pdf-footer {
-  margin-top: 30px;
-  padding-top: 10px;
+  margin-top: 15px;
+  padding-top: 8px;
   border-top: 1px solid #eee;
   color: #888;
   font-size: 0.85em;
 }
 .pdf-footer a {
   color: #888;
+}
+
+.pdf-interactive-link {
+  margin-top: 8px;
+  font-size: 0.75em;
+  color: #888;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-transform: none;
+}
+.pdf-interactive-link a {
+  color: #5a8fb0;
 }
 
 body.pdf-mode {
@@ -366,13 +378,28 @@ body.pdf-mode .box {
   margin-bottom: 8px;
   padding-bottom: 4px;
 }
+body.pdf-mode .section-bundle::before {
+  content: "";
+  display: block;
+  height: 22px;
+}
 body.pdf-mode .box h2 {
   margin-top: 8px;
   margin-bottom: 8px;
   break-after: avoid;
   page-break-after: avoid;
 }
-body.pdf-mode .box.keep-together {
+body.pdf-mode .box .job:first-of-type,
+body.pdf-mode .box ul:first-of-type,
+body.pdf-mode .box .skills:first-of-type {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+body.pdf-mode .box.keep-together,
+body.pdf-mode .section-bundle {
   break-inside: avoid;
   page-break-inside: avoid;
+}
+body.pdf-mode .container {
+  margin-bottom: 0;
 }

@@ -18,6 +18,74 @@ function markdownToHtml(text) {
     return marked(text).replace(/<\/?p>/g, '');
 }
 
+var PDF_FILTERS = {
+    workHide: ['ViteMaDose', 'BDX I/O Conference'],
+    workHideHighlights: ['DevXWeb (SASU)'],
+    workHideDescAndHighlights: ['SQLI'],
+    volunteerHideHighlights: ['BDX I/O Association', 'Devoxx France'],
+    projectsHideDescAndHighlights: ['Voxxrin 3', 'ViteMaDose']
+};
+
+function stripHighlights(entry) {
+    delete entry.highlights;
+    delete entry.boolHighlights;
+    delete entry.avoidHighlightsPageBreak;
+}
+
+function stripDescription(entry) {
+    delete entry.description;
+    delete entry.summary;
+    delete entry.position;
+    delete entry.entity;
+}
+
+function applyPdfFilters(resumeObject) {
+    if (resumeObject.work) {
+        resumeObject.work = resumeObject.work.filter(function(w) {
+            return PDF_FILTERS.workHide.indexOf(w.name) === -1;
+        });
+        resumeObject.work.forEach(function(w) {
+            if (PDF_FILTERS.workHideHighlights.indexOf(w.name) !== -1) {
+                stripHighlights(w);
+            }
+            if (PDF_FILTERS.workHideDescAndHighlights.indexOf(w.name) !== -1) {
+                stripHighlights(w);
+                stripDescription(w);
+            }
+        });
+    }
+
+    if (resumeObject.volunteer) {
+        resumeObject.volunteer.forEach(function(v) {
+            if (PDF_FILTERS.volunteerHideHighlights.indexOf(v.organization) !== -1) {
+                stripHighlights(v);
+            }
+        });
+    }
+
+    if (resumeObject.projects) {
+        resumeObject.projects.forEach(function(p) {
+            if (PDF_FILTERS.projectsHideDescAndHighlights.indexOf(p.name) !== -1) {
+                stripHighlights(p);
+                stripDescription(p);
+            }
+        });
+    }
+
+    resumeObject.publicationsBool = false;
+    resumeObject.certificatesBool = false;
+
+    if (resumeObject.work && resumeObject.work.length) {
+        resumeObject.work[0].isFirst = true;
+    }
+    if (resumeObject.volunteer && resumeObject.volunteer.length) {
+        resumeObject.volunteer[0].isFirst = true;
+    }
+    if (resumeObject.projects && resumeObject.projects.length) {
+        resumeObject.projects[0].isFirst = true;
+    }
+}
+
 function getMonth(startDateStr) {
     switch (startDateStr.substr(5,2)) {
     case '01':
@@ -355,6 +423,10 @@ function render(resumeObject) {
     }
 
     resumeObject.isPdfTarget = process.env.RESUME_TARGET === 'pdf';
+
+    if (resumeObject.isPdfTarget) {
+        applyPdfFilters(resumeObject);
+    }
 
     resumeObject.css = fs.readFileSync(__dirname + "/style.css", "utf-8");
     resumeObject.printcss = fs.readFileSync(__dirname + "/print.css", "utf-8");
