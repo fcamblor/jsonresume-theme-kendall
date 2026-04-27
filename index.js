@@ -18,23 +18,6 @@ function markdownToHtml(text) {
     return marked(text).replace(/<\/?p>/g, '');
 }
 
-function markPageBreaksAfterLongEntries(entries) {
-    if (!entries) return;
-
-    for (var i = 1; i < entries.length; i++) {
-        var previous = entries[i - 1];
-        var current = entries[i];
-
-        if (
-            previous.highlights &&
-            previous.highlights.length >= 8 &&
-            current.avoidJobPageBreak
-        ) {
-            current.forcePageBreakBefore = true;
-        }
-    }
-}
-
 function getMonth(startDateStr) {
     switch (startDateStr.substr(5,2)) {
     case '01':
@@ -168,7 +151,6 @@ function render(resumeObject) {
                 }
             }
         });
-        markPageBreaksAfterLongEntries(resumeObject.work);
     }
 
     if (resumeObject.volunteer && resumeObject.volunteer.length) {
@@ -201,7 +183,6 @@ function render(resumeObject) {
                 }
             }
         });
-        markPageBreaksAfterLongEntries(resumeObject.volunteer);
     }
 
     if (resumeObject.projects && resumeObject.projects.length) {
@@ -238,7 +219,6 @@ function render(resumeObject) {
                     }
                 }
             });
-            markPageBreaksAfterLongEntries(resumeObject.projects);
         }
     }
 
@@ -373,6 +353,8 @@ function render(resumeObject) {
             resumeObject.referencesBool = true;
         }
     }
+
+    resumeObject.isPdfTarget = process.env.RESUME_TARGET === 'pdf';
 
     resumeObject.css = fs.readFileSync(__dirname + "/style.css", "utf-8");
     resumeObject.printcss = fs.readFileSync(__dirname + "/print.css", "utf-8");

@@ -7,14 +7,6 @@ a[href]:after {
   content: none !important;
 }
 
-#photo{
-  display: none;
-}
-
-.box {
-  margin-bottom: -10px;
-}
-
 .box h2 {
   break-after: avoid;
   page-break-after: avoid;
@@ -23,6 +15,11 @@ a[href]:after {
 .box.page-break-before {
   break-before: page;
   page-break-before: always;
+}
+
+.box.keep-together {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 blockquote,

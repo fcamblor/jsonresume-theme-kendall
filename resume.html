@@ -322,8 +322,10 @@ blockquote,
 }
 
 .bluesky-emoji {
-  font-size: 1.25em;
-  line-height: 1em;
+  display: inline-block;
+  width: 1.28em;
+  text-align: center;
+  line-height: 1;
   vertical-align: text-bottom;
 }
 
@@ -333,10 +335,28 @@ blockquote,
   border-bottom: 1px solid #eee;
 }
 
+.pdf-header {
+  margin-bottom: 10px;
+}
+.pdf-header .box {
+  margin-bottom: 10px;
+}
+
+.pdf-footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 0.85em;
+}
+.pdf-footer a {
+  color: #888;
+}
+
     </style>
     <style type="text/css" media="print">
     body {
-  font-size: .95em;
+  font-size: .78em;
   -webkit-print-color-adjust: exact;
 }
 
@@ -344,15 +364,38 @@ a[href]:after {
   content: none !important;
 }
 
-#photo{
-  display: none;
+.container {
+  margin-top: 40px;
+}
+
+#photo-header {
+  margin-top: -38px;
+  margin-bottom: 0;
+}
+#photo {
+  width: 95px;
+  height: 95px;
+  padding: 3px;
+}
+#photo img {
+  width: 89px;
+  height: 89px;
+}
+#text-header h1 {
+  font-size: 1.25em;
+}
+#text-header:after {
+  margin-top: 5px;
 }
 
 .box {
-  margin-bottom: -10px;
+  margin-bottom: 6px;
+  padding-bottom: 2px;
 }
-
 .box h2 {
+  font-size: 1.2em;
+  margin-top: 4px;
+  margin-bottom: 4px;
   break-after: avoid;
   page-break-after: avoid;
 }
@@ -360,6 +403,29 @@ a[href]:after {
 .box.page-break-before {
   break-before: page;
   page-break-before: always;
+}
+
+.box.keep-together {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.contact-item .icon {
+  padding: 6px;
+}
+.contact-item .title {
+  margin-top: 4px;
+}
+
+#education {
+  padding: 0.4em 0;
+}
+#education > li {
+  margin-bottom: 4px;
+}
+
+.list-group-item {
+  padding: 3px 12px;
 }
 
 blockquote,
@@ -480,7 +546,7 @@ blockquote,
 </p>
           </div>
           <!-- LOOKING FOR -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-bullseye ico"></i> Looking For</h2>
             <ul class="list-group">
               <li class="list-group-item">
@@ -498,7 +564,7 @@ blockquote,
             </ul>
           </div>
           <!-- OFFERING -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-gift ico"></i> What I Offer</h2>
             <ul class="list-group">
               <li class="list-group-item">

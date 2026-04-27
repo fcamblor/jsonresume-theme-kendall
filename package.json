@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gen-html": "npx resume-cli@3.1.2 export resume.html --theme .",
-    "gen-pdf": "npx resume-cli@3.1.2 export resume.pdf --theme ."
+    "gen-pdf": "RESUME_TARGET=pdf npx resume-cli@3.1.2 export resume.pdf --theme ."
   },
   "author": "M. Adam Kendall",
   "license": "MIT",

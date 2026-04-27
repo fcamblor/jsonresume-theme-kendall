@@ -17,7 +17,7 @@
     {{{printcss}}}
     </style>
   </head>
-  <body>
+  <body{{#isPdfTarget}} class="pdf-mode"{{/isPdfTarget}}>
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -34,8 +34,101 @@
           </div>
         </div>
       </div>
+      {{#isPdfTarget}}
+      {{#basics.summary}}
+      <div class="row pdf-about">
+        <div class="col-xs-12">
+          <!-- ABOUT ME (PDF) -->
+          <div class="box keep-together">
+            <h2><i class="fas fa-user ico"></i> About</h2>
+            <p>{{{basics.summary}}}</p>
+          </div>
+        </div>
+      </div>
+      {{/basics.summary}}
+      <div class="row pdf-header">
+        <div class="col-xs-6">
+          <!-- CONTACT (PDF) -->
+          <div class="box clearfix">
+            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
+            {{#basics.location}}
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+              {{#basics.location.address}}<div class="title pull-right">{{basics.location.address}}, {{#basics.location.postalCode}}{{basics.location.postalCode}} {{/basics.location.postalCode}}{{basics.location.city}}</div>{{/basics.location.address}}
+              <div class="title {{^basics.location.address}}only {{/basics.location.address}} pull-right">{{#basics.location.region}}{{basics.location.region}}{{/basics.location.region}}{{#basics.location.countryCode}} {{basics.location.countryCode}}{{/basics.location.countryCode}}</div>
+            </div>
+            {{/basics.location}}
+            {{#basics.phone}}
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">{{basics.phone}}</div>
+            </div>
+            {{/basics.phone}}
+            {{#basics.email}}
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a></div>
+            </div>
+            {{/basics.email}}
+            {{#basics.url}}
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fas fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="{{basics.url}}" target="_blank">{{basics.url}}</a></div>
+            </div>
+            {{/basics.url}}
+            {{#basics.profiles}}
+            <div class="contact-item">
+              <div class="icon pull-left text-center">{{#isBluesky}}<span class="bluesky-emoji">🦋</span>{{/isBluesky}}{{^isBluesky}}<span class="{{iconClass}} fa-fw"></span>{{/isBluesky}}</div>
+              <div class="title pull-right">{{network}}</div>
+              <div class="description pull-right"><a href="{{url}}" target="_blank">{{#username}}{{username}}{{/username}}{{^username}}{{url}}{{/username}}</a></div>
+            </div>
+            {{/basics.profiles}}
+          </div>
+        </div>
+        <div class="col-xs-6">
+          {{#educationBool}}
+          <!-- EDUCATION (PDF) -->
+          <div class="box">
+            <h2><i class="fas fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              {{#education}}
+              <li>
+                <div class="year pull-left">{{startDateYear}} {{endDateYear}}</div>
+                <div class="description pull-right">
+                  <h3>{{institution}}</h3>
+                  <div class="where">{{organization}}</div>
+                  {{#url}}
+                  <div class="address">
+                    <a href="{{url}}" target= "_blank"><i class="fas fa-globe ico"></i> {{url}}</a>
+                  </div>
+                  {{/url}}
+                  {{#studyType}}<p><i class= "fas fa-graduation-cap ico"></i> {{studyType}}</p>{{/studyType}}
+                  <p>{{area}}</p>
+                  {{#score}}
+                  <p>
+                    Grade: {{score}}
+                  </p>
+                  {{/score}}
+                  {{#educationCourses}}
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      {{#courses}}
+                      <li class="list-group-item">{{{.}}}</li>
+                      {{/courses}}
+                    </ul>
+                  {{/educationCourses}}
+                </div>
+              </li>
+              {{/education}}
+            </ul>
+          </div>
+          {{/educationBool}}
+        </div>
+      </div>
+      {{/isPdfTarget}}
       <div class="row">
         <div class="col-xs-12 col-sm-7">
+          {{^isPdfTarget}}
           {{#basics.summary}}
           <!-- ABOUT ME -->
           <div class="box">
@@ -43,9 +136,10 @@
             <p>{{{basics.summary}}}</p>
           </div>
           {{/basics.summary}}
+          {{/isPdfTarget}}
           {{#meta.extras.looking_for}}
           <!-- LOOKING FOR -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-bullseye ico"></i> Looking For</h2>
             <ul class="list-group">
               {{#meta.extras.looking_for.items}}
@@ -65,7 +159,7 @@
           {{/meta.extras.looking_for}}
           {{#meta.extras.offering}}
           <!-- OFFERING -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-gift ico"></i> What I Offer</h2>
             <ul class="list-group">
               {{#meta.extras.offering.items}}
@@ -242,6 +336,7 @@
           {{/projectsBool}}
         </div>
         <div class="col-xs-12 col-sm-5">
+          {{^isPdfTarget}}
           <!-- CONTACT -->
           <div class="box clearfix">
             <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
@@ -315,9 +410,10 @@
             </ul>
           </div>
           {{/educationBool}}
+          {{/isPdfTarget}}
           {{#skillsBool}}
           <!-- SKILLS -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-tasks ico"></i> Skills</h2>
             {{#skills}}
             <div class="skills clearfix">
@@ -386,7 +482,7 @@
           {{/certificatesBool}}
           {{#languagesBool}}
           <!-- LANGUAGES -->
-          <div class="box">
+          <div class="box keep-together">
             <h2><i class="fas fa-language ico"></i> Languages</h2>
             <ul class="list-group">
               {{#languages}}
@@ -428,6 +524,13 @@
           {{/referencesBool}}
         </div>
       </div>
+      {{#isPdfTarget}}
+      <div class="row pdf-footer">
+        <div class="col-xs-12 text-center">
+          <small>Version interactive&nbsp;: <a href="https://fcamblor.github.io/resume.html">https://fcamblor.github.io/resume.html</a></small>
+        </div>
+      </div>
+      {{/isPdfTarget}}
     </div>
 
   </body>

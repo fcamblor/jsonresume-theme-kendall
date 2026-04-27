@@ -309,8 +309,10 @@ blockquote,
 }
 
 .bluesky-emoji {
-  font-size: 1.25em;
-  line-height: 1em;
+  display: inline-block;
+  width: 1.28em;
+  text-align: center;
+  line-height: 1;
   vertical-align: text-bottom;
 }
 
@@ -318,4 +320,59 @@ blockquote,
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
+}
+
+.pdf-header {
+  margin-bottom: 10px;
+}
+.pdf-header .box {
+  margin-bottom: 10px;
+}
+
+.pdf-footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 0.85em;
+}
+.pdf-footer a {
+  color: #888;
+}
+
+body.pdf-mode {
+  font-size: 0.95em;
+}
+body.pdf-mode .container {
+  margin-top: 50px;
+}
+body.pdf-mode #photo-header {
+  margin-top: -45px;
+  margin-bottom: 5px;
+}
+body.pdf-mode #photo {
+  width: 110px;
+  height: 110px;
+  padding: 4px;
+}
+body.pdf-mode #photo img {
+  width: 102px;
+  height: 102px;
+}
+body.pdf-mode #text-header h1 {
+  font-size: 1.4em;
+}
+body.pdf-mode .box {
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+body.pdf-mode .box h2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+body.pdf-mode .box.keep-together {
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
