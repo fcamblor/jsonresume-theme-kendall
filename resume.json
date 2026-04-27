@@ -44,7 +44,7 @@
         "image": "https://2.gravatar.com/avatar/d6ce7477c41fbbf9427562ef52e66f46e8cb776ccfb2fe55876813697c5f669c?size=512&d=initials",
         "email": "fred@camblor.fr",
         "phone": "(+33)6 36 00 70 81",
-        "summary": "Full-stack engineer delivering high-impact web & mobile apps with strong product & UX focus",
+        "summary": "**Full-stack AI engineer delivering high-impact web & mobile apps with strong product & UX focus**",
         "location": {
             "address": "37 rue Jean Moulin",
             "postalCode": "33140",
@@ -496,7 +496,7 @@
     },
     {
       "name": "AI",
-      "level": "Advanced",
+      "level": "Specialist",
       "keywords": [
         "Claude Code",
         "AI tooling", "Worktrees",
